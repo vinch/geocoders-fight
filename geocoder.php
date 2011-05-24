@@ -2,8 +2,8 @@
 
 abstract class Geocoder {
 	
-	const GOOGLE_API_KEY = 'ABQIAAAA0MB-bwjeOkgNnvIVmieN-RRGFE70GU6HoKR8y6scev5RsM1ueBTOQJOiOylC3_4webQgysLYrT4o5A';
-	const YAHOO_API_KEY = 'ERxj2g3V34HWbC4EUVmhXqsxzruo_eeQ2n6vhj3_1_geb932v.1.crOP3htc2qpA9raYBDEKqy4-';
+	const GOOGLE_API_KEY = 'YOUR_GOOGLE_API_KEY';
+	const YAHOO_API_KEY = 'YOUR_YAHOO_API_KEY';
 	
 	public function getLatLng($location) {
 		$gc = self::getGoogleLatLng($location);
