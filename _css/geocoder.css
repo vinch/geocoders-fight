@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 62.5%;
+	font-family: "Helvetica","Arial",sans-serif;
+	padding: 15px;
+}
+h1 {
+	margin-bottom: 15px;
+	font-size: 3em;
+}
+blockquote {
+	margin-bottom: 15px;
+}
+p, dt, dd {
+	font-size: 1.4em;
+}
+#search {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+#search input, #batch input, #csv input {
+	display: block;
+	float: left;
+	font-size: 1.4em;
+	font-family: "Helvetica","Arial",sans-serif;
+}
+#search input.text {
+	width: 300px;
+	border: 2px solid #CCC;
+	border-right: 0;
+	padding: 4px 0 0 2px;
+	height: 18px;
+}
+#search input.submit, #batch input.submit, #csv input.submit {
+	height: 26px;
+	border: 0;
+	background: #CCC;
+	padding: 0 5px;
+}
+#google, #yahoo {
+	width: 500px;
+	float: left;
+	margin-bottom: 30px;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 15px;
+}
+dl {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+dt, dd {
+	float: left;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+dt {
+	clear: left;
+	width: 80px;
+}
+.map {
+	width: 500px;
+	height: 350px;
+	clear: both;
+}
+#batch {
+	clear: both;
+}
+#batch p {
+	margin-bottom: 15px;
+}
+#batch input.submit {
+	margin-left: 10px;
+}
+table {
+	border-collapse: collapse;
+	margin-bottom: 15px;
+}
+table td {
+	font-size: 1.2em;
+	border: 1px solid #CCC;
+	padding: 5px 8px;
+}
