@@ -1,0 +1,6 @@
+Comparison of geocoders from Google and Yahoo!
+
+Edit the file "geocoder.php" to add your own Google and Yahoo! API keys.
+
+* Google Maps API key: http://code.google.com/apis/maps/signup.html
+* Yahoo! Maps API key: http://developer.yahoo.com/maps/simple/
