@@ -1,0 +1,4 @@
+<?php
+
+define('GOOGLE_API_KEY', 'YOUR_GOOGLE_API_KEY');
+define('YAHOO_API_KEY', 'YOUR_YAHOO_API_KEY');

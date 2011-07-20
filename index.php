@@ -1,6 +1,7 @@
 <?php
 
-include_once('geocoder.php');
+include_once 'keys.inc.php';
+include_once 'geocoder.php';
 
 if (isset($_GET['location']) && !empty($_GET['location'])) {
 	$location = $_GET['location'];
@@ -18,8 +19,8 @@ if (isset($_GET['location']) && !empty($_GET['location'])) {
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Geocoders Fight</title>
 	<link rel="stylesheet" href="_css/geocoder.css" type="text/css" />
-	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA0MB-bwjeOkgNnvIVmieN-RRGFE70GU6HoKR8y6scev5RsM1ueBTOQJOiOylC3_4webQgysLYrT4o5A" type="text/javascript"></script>
-	<script type="text/javascript" src="http://api.maps.yahoo.com/ajaxymap?v=3.8&amp;appid=ERxj2g3V34HWbC4EUVmhXqsxzruo_eeQ2n6vhj3_1_geb932v.1.crOP3htc2qpA9raYBDEKqy4-"></script>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<?php echo GOOGLE_API_KEY ?>" type="text/javascript"></script>
+	<script type="text/javascript" src="http://api.maps.yahoo.com/ajaxymap?v=3.8&amp;appid=<?php echo YAHOO_API_KEY ?>"></script>
 	<script type="text/javascript" src="_js/geocoder.js"></script>
 </head>
 
@@ -31,7 +32,7 @@ if (isset($_GET['location']) && !empty($_GET['location'])) {
 	<div id="search">
 		<form action="." method="get">
 			<div>
-				<input type="text" name="location" value="<?php echo $location; ?>" class="text" />
+				<input type="text" name="location" value="<?php if (isset($location)) echo $location; ?>" class="text" />
 				<input type="submit" value="Go" class="submit" />
 			</div>
 		</form>
